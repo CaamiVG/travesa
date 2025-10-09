@@ -1,5 +1,9 @@
 import { Map, TreePine, FileSearch, Activity } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import gisImage from "@/assets/service-gis.jpg";
+import studiesImage from "@/assets/service-studies.jpg";
+import restorationImage from "@/assets/service-restoration.jpg";
+import monitoringImage from "@/assets/service-monitoring.jpg";
 
 const Services = () => {
   const services = [
@@ -13,6 +17,7 @@ const Services = () => {
         "Análisis geoespacial",
         "Modelamiento territorial",
       ],
+      image: gisImage,
     },
     {
       icon: FileSearch,
@@ -24,6 +29,7 @@ const Services = () => {
         "Línea base ambiental",
         "Planes de cumplimiento",
       ],
+      image: studiesImage,
     },
     {
       icon: TreePine,
@@ -35,6 +41,7 @@ const Services = () => {
         "Revegetación nativa",
         "Recuperación de suelos",
       ],
+      image: restorationImage,
     },
     {
       icon: Activity,
@@ -46,6 +53,7 @@ const Services = () => {
         "Control de calidad ambiental",
         "Informes de cumplimiento",
       ],
+      image: monitoringImage,
     },
   ];
 
@@ -65,12 +73,21 @@ const Services = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg group"
+              className="border-border hover:border-primary/50 transition-all duration-300 group overflow-hidden"
+              style={{ boxShadow: "var(--shadow-card)" }}
             >
-              <CardHeader>
-                <div className="bg-primary/10 w-14 h-14 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <service.icon className="h-7 w-7 text-primary" />
+              <div className="relative h-56 overflow-hidden">
+                <img 
+                  src={service.image} 
+                  alt={service.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 bg-primary/95 backdrop-blur-sm w-14 h-14 rounded-lg flex items-center justify-center group-hover:bg-primary transition-colors">
+                  <service.icon className="h-7 w-7 text-primary-foreground" />
                 </div>
+              </div>
+              <CardHeader>
                 <CardTitle className="text-xl text-secondary group-hover:text-primary transition-colors">
                   {service.title}
                 </CardTitle>

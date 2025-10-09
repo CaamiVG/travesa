@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, FileText } from "lucide-react";
+import heroImage from "@/assets/hero-austral.jpg";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -13,21 +14,39 @@ const Hero = () => {
     <section
       id="inicio"
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
-      style={{
-        background: "var(--gradient-hero)",
-      }}
     >
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0">
+        <img 
+          src={heroImage} 
+          alt="Ecosistemas del sur austral de Chile"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-secondary/90 via-primary/85 to-accent/90"></div>
+      </div>
+
+      {/* Decorative Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-72 h-72 bg-card rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-background rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
-            Compromiso Ambiental y{" "}
-            <span className="text-background">Profesionalismo</span> en Chile
+          <div className="mb-4">
+            <span className="inline-block px-4 py-2 bg-background/10 backdrop-blur-sm border border-primary-foreground/20 rounded-full text-sm text-primary-foreground/90 font-medium">
+              Travesía por la conservación de los ecosistemas del sur austral
+            </span>
+          </div>
+          
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
+            TRAVESA
           </h1>
+          
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-primary-foreground/95 mb-6">
+            Compromiso Ambiental y Profesionalismo en Chile
+          </h2>
+          
           <p className="text-lg sm:text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
             Especialistas en consultoría ambiental, cartografía SIG, estudios ambientales
             y restauración ecológica. Trabajamos con comunidades y empresas para un futuro sostenible.
