@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-secondary backdrop-blur-sm border-b border-secondary/30 shadow-lg">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center space-x-3">
@@ -22,47 +22,47 @@ const Header = () => {
               <span className="text-primary-foreground font-bold text-xl">T</span>
             </div>
             <div className="flex flex-col">
-              <span className="font-heading font-bold text-lg text-secondary leading-tight">
+              <span className="font-heading font-bold text-lg text-secondary-foreground leading-tight">
                 Travesa
               </span>
-              <span className="text-xs text-muted-foreground">Consultora Ambiental</span>
+              <span className="text-xs text-secondary-foreground/80">Consultora Ambiental</span>
             </div>
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection("inicio")}
-              className="text-sm font-medium text-secondary hover:text-primary transition-colors"
+              className="text-sm font-medium text-secondary-foreground/90 hover:text-secondary-foreground transition-colors"
             >
               Inicio
             </button>
             <button
               onClick={() => scrollToSection("nosotros")}
-              className="text-sm font-medium text-secondary hover:text-primary transition-colors"
+              className="text-sm font-medium text-secondary-foreground/90 hover:text-secondary-foreground transition-colors"
             >
               Nosotros
             </button>
             <button
               onClick={() => scrollToSection("servicios")}
-              className="text-sm font-medium text-secondary hover:text-primary transition-colors"
+              className="text-sm font-medium text-secondary-foreground/90 hover:text-secondary-foreground transition-colors"
             >
               Servicios
             </button>
             <button
               onClick={() => scrollToSection("equipo")}
-              className="text-sm font-medium text-secondary hover:text-primary transition-colors"
+              className="text-sm font-medium text-secondary-foreground/90 hover:text-secondary-foreground transition-colors"
             >
               Equipo
             </button>
             <button
               onClick={() => scrollToSection("contacto")}
-              className="text-sm font-medium text-secondary hover:text-primary transition-colors"
+              className="text-sm font-medium text-secondary-foreground/90 hover:text-secondary-foreground transition-colors"
             >
               Contacto
             </button>
             <Button
               onClick={() => scrollToSection("contacto")}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-md"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-md"
             >
               Solicitar Presupuesto
             </Button>
@@ -73,50 +73,50 @@ const Header = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
-              <X className="h-6 w-6 text-secondary" />
+              <X className="h-6 w-6 text-secondary-foreground" />
             ) : (
-              <Menu className="h-6 w-6 text-secondary" />
+              <Menu className="h-6 w-6 text-secondary-foreground" />
             )}
           </button>
         </div>
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden bg-card border-t border-border">
+        <div className="md:hidden bg-secondary border-t border-secondary/30">
           <nav className="container mx-auto px-4 py-4 flex flex-col space-y-3">
             <button
               onClick={() => scrollToSection("inicio")}
-              className="text-left text-sm font-medium text-secondary hover:text-primary py-2"
+              className="text-left text-sm font-medium text-secondary-foreground/90 hover:text-secondary-foreground py-2"
             >
               Inicio
             </button>
             <button
               onClick={() => scrollToSection("nosotros")}
-              className="text-left text-sm font-medium text-secondary hover:text-primary py-2"
+              className="text-left text-sm font-medium text-secondary-foreground/90 hover:text-secondary-foreground py-2"
             >
               Nosotros
             </button>
             <button
               onClick={() => scrollToSection("servicios")}
-              className="text-left text-sm font-medium text-secondary hover:text-primary py-2"
+              className="text-left text-sm font-medium text-secondary-foreground/90 hover:text-secondary-foreground py-2"
             >
               Servicios
             </button>
             <button
               onClick={() => scrollToSection("equipo")}
-              className="text-left text-sm font-medium text-secondary hover:text-primary py-2"
+              className="text-left text-sm font-medium text-secondary-foreground/90 hover:text-secondary-foreground py-2"
             >
               Equipo
             </button>
             <button
               onClick={() => scrollToSection("contacto")}
-              className="text-left text-sm font-medium text-secondary hover:text-primary py-2"
+              className="text-left text-sm font-medium text-secondary-foreground/90 hover:text-secondary-foreground py-2"
             >
               Contacto
             </button>
             <Button
               onClick={() => scrollToSection("contacto")}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground w-full"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground w-full"
             >
               Solicitar Presupuesto
             </Button>

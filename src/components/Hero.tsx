@@ -22,7 +22,7 @@ const Hero = () => {
           alt="Ecosistemas del sur austral de Chile"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-secondary/90 via-primary/85 to-accent/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-secondary/60 via-primary/55 to-accent/60"></div>
       </div>
 
       {/* Decorative Elements */}

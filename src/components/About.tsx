@@ -13,19 +13,19 @@ const About = () => {
                 Acerca de Travesa
               </h2>
               <p className="text-lg text-foreground leading-relaxed mb-4">
-                Travesa Consultora Ambiental Limitada es una empresa chilena especializada
-                en consultoría ambiental integral. Ofrecemos soluciones innovadoras y
-                sostenibles para empresas, instituciones públicas y comunidades que buscan
-                desarrollar sus proyectos en armonía con el medio ambiente.
+                Somos una empresa consultora ambiental nacida en el sur de Chile, con una profunda vocación por la conservación de la biodiversidad, la planificación territorial y la aplicación de tecnología avanzada para comprender y proteger los ecosistemas.
               </p>
               <p className="text-foreground leading-relaxed mb-4">
-                Con un equipo multidisciplinario de profesionales altamente calificados,
-                combinamos experiencia técnica, conocimiento local y compromiso ético para
-                entregar servicios de excelencia en cartografía SIG, estudios de impacto
-                ambiental, restauración ecológica y monitoreo ambiental.
+                Nos inspiran los paisajes que habitamos —bosques, humedales, fiordos y montañas— y buscamos integrarlos en soluciones concretas para enfrentar los desafíos ambientales actuales y futuros.
+              </p>
+              <p className="text-foreground leading-relaxed mb-4">
+                A través de un enfoque interdisciplinario y territorial, ofrecemos servicios que combinan conocimiento técnico con herramientas como los sistemas de información geográfica (SIG), el monitoreo con drones, el análisis de servicios ecosistémicos y la evaluación espacial de paisajes degradados.
+              </p>
+              <p className="text-foreground leading-relaxed mb-4">
+                Nuestra visión es avanzar progresivamente hacia la integración de modelos predictivos, modelación ecológica y climática, y simulaciones espacio-temporales que permitan tomar decisiones más informadas y estratégicas en conservación.
               </p>
               <p className="text-sm text-muted-foreground italic">
-                Nuestro compromiso es con la travesía hacia la conservación de los ecosistemas del sur austral.
+                Estamos construyendo esta empresa paso a paso, con los pies en la tierra y la mirada en el futuro. Creemos que la tecnología, la ciencia y el territorio deben dialogar. Y eso es lo que nos mueve.
               </p>
             </div>
             <div className="relative">
@@ -53,10 +53,7 @@ const About = () => {
                     Nuestra Misión
                   </h3>
                   <p className="text-foreground leading-relaxed">
-                    Proporcionar servicios de consultoría ambiental de excelencia que
-                    promuevan el desarrollo sustentable, protegiendo los ecosistemas y
-                    apoyando a las comunidades locales mediante soluciones técnicas
-                    innovadoras y éticamente responsables.
+                    Impulsar la conservación de ecosistemas mediante tecnología avanzada, conocimiento científico y compromiso territorial, ofreciendo soluciones técnicas de alta calidad que promuevan la planificación estratégica y la gestión sostenible de la biodiversidad.
                   </p>
                 </div>
               </div>
@@ -74,10 +71,7 @@ const About = () => {
                     Nuestra Visión
                   </h3>
                   <p className="text-foreground leading-relaxed">
-                    Ser reconocidos como la consultora ambiental líder en Chile por nuestra
-                    capacidad de integrar conocimiento científico, tecnología avanzada y
-                    participación comunitaria para generar impacto positivo y duradero en
-                    el medio ambiente.
+                    Liderar proyectos de alta complejidad técnica y científica en conservación, expandiendo nuestro impacto en Chile y Latinoamérica a través de la investigación aplicada, la innovación tecnológica y el desarrollo continuo de nuestras capacidades profesionales.
                   </p>
                 </div>
               </div>
@@ -98,19 +92,23 @@ const About = () => {
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
-                    <span>Consolidar nuestro liderazgo en cartografía SIG y estudios ambientales</span>
+                    <span>Impulsar la conservación de ecosistemas terrestres y marinos mediante planificación estratégica y diagnósticos territoriales con base científica</span>
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
-                    <span>Fortalecer alianzas estratégicas con comunidades locales e indígenas</span>
+                    <span>Desarrollar e implementar herramientas tecnológicas (SIG, teledetección, drones, estaciones meteorológicas) para el monitoreo ambiental y la gestión sostenible</span>
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
-                    <span>Innovar constantemente en metodologías de restauración ecológica</span>
+                    <span>Identificar áreas prioritarias para la conservación utilizando estándares internacionales y enfoques participativos vinculados a los territorios</span>
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
-                    <span>Contribuir activamente a la educación y conciencia ambiental</span>
+                    <span>Promover la investigación aplicada y la innovación ambiental, incluyendo modelación espacial, ecológica e hidrológica a distintas escalas</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">•</span>
+                    <span>Fortalecer capacidades locales y redes de colaboración a través de la educación ambiental, asesorías técnicas y alianzas con comunidades, instituciones y centros de investigación</span>
                   </li>
                 </ul>
               </div>

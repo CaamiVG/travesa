@@ -9,51 +9,55 @@ const Services = () => {
   const services = [
     {
       icon: Map,
-      title: "Cartografía y SIG",
+      title: "Servicios Técnicos",
       description:
-        "Elaboración de mapas temáticos, análisis espacial y gestión de bases de datos geográficas para proyectos ambientales y territoriales.",
+        "Cartografía ambiental, análisis territorial y gestión forestal con tecnología de punta y profesionales acreditados.",
       features: [
-        "Levantamiento topográfico",
-        "Análisis geoespacial",
-        "Modelamiento territorial",
+        "Cartografía ambiental y georreferenciación predial",
+        "Diagnóstico de paisajes degradados y fragmentación ecológica",
+        "Planes de manejo (bosque nativo, conservación, restauración)",
+        "Detección de corta ilegal o uso no autorizado con drones",
+        "Inventario y tasación de predios forestales",
       ],
       image: gisImage,
     },
     {
-      icon: FileSearch,
-      title: "Estudios Ambientales",
+      icon: Activity,
+      title: "Servicios de Monitoreo y Análisis",
       description:
-        "Evaluaciones de impacto ambiental, estudios de línea base y declaraciones de impacto ambiental para proyectos de diversos sectores.",
+        "Monitoreo ambiental avanzado con drones, sensores y análisis de parámetros fisicoquímicos en ecosistemas terrestres y acuáticos.",
       features: [
-        "EIA y DIA",
-        "Línea base ambiental",
-        "Planes de cumplimiento",
+        "Monitoreo ambiental con drones y sensores",
+        "Instalación y análisis de estaciones meteorológicas",
+        "Análisis de parámetros fisicoquímicos en cuerpos de agua y fiordos",
+        "Evaluación de servicios ecosistémicos y modelación espacial",
+      ],
+      image: monitoringImage,
+    },
+    {
+      icon: FileSearch,
+      title: "Servicios de Planificación",
+      description:
+        "Planificación estratégica y diseño de paisajes funcionales basados en estándares internacionales y análisis territorial.",
+      features: [
+        "Identificación de áreas prioritarias de conservación",
+        "Diseño de paisajes funcionales y corredores ecológicos",
+        "Simulaciones y modelaciones espaciales",
+        "Estudios de línea base ambiental",
       ],
       image: studiesImage,
     },
     {
       icon: TreePine,
-      title: "Restauración Ecológica",
+      title: "Servicios de Capacitación y Apoyo Institucional",
       description:
-        "Diseño e implementación de proyectos de restauración de ecosistemas degradados, recuperación de suelos y revegetación nativa.",
+        "Fortalecimiento de capacidades locales mediante educación ambiental y asistencia técnica especializada.",
       features: [
-        "Planes de restauración",
-        "Revegetación nativa",
-        "Recuperación de suelos",
+        "Talleres de educación ambiental y SIG aplicado",
+        "Capacitación en herramientas de conservación y análisis territorial",
+        "Apoyo técnico a municipios, ONGs o empresas en gestión ambiental",
       ],
       image: restorationImage,
-    },
-    {
-      icon: Activity,
-      title: "Monitoreo Ambiental",
-      description:
-        "Programas de seguimiento de flora, fauna, agua, aire y suelo para verificar el cumplimiento de compromisos ambientales.",
-      features: [
-        "Monitoreo de flora y fauna",
-        "Control de calidad ambiental",
-        "Informes de cumplimiento",
-      ],
-      image: monitoringImage,
     },
   ];
 

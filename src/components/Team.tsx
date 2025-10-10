@@ -4,24 +4,16 @@ import { Users } from "lucide-react";
 const Team = () => {
   const teamMembers = [
     {
-      name: "Director/a General",
-      role: "Liderazgo Estratégico",
-      description: "Visión y dirección de la empresa",
+      name: "Camila Gandulfo",
+      role: "Ingeniera Ambiental",
+      title: "Directora Ejecutiva y Líder en Conservación Terrestre",
+      description: "Co-fundadora. Ingeniera ambiental con experiencia en conservación de la biodiversidad, planificación territorial y análisis espacial. Especializada en SIG, áreas prioritarias de conservación y diseño de estrategias ecológicas en ecosistemas terrestres y humedales.",
     },
     {
-      name: "Director/a Técnico",
-      role: "Coordinación de Proyectos",
-      description: "Supervisión técnica y calidad",
-    },
-    {
-      name: "Especialista SIG",
-      role: "Cartografía y Análisis Espacial",
-      description: "Geomática y modelamiento territorial",
-    },
-    {
-      name: "Biólogo/a Ambiental",
-      role: "Estudios y Monitoreo",
-      description: "Flora, fauna y ecosistemas",
+      name: "Sebastián Sepúlveda",
+      role: "Ingeniero Ambiental",
+      title: "Director Técnico y Líder en Sistemas Acuáticos y Datos Ambientales",
+      description: "Co-fundador. Especialista en monitoreo de ecosistemas marinos, instalación de estaciones meteorológicas y análisis de parámetros fisicoquímicos en cuerpos de agua y fiordos. Enfocado en el desarrollo de herramientas para la recolección y modelación de datos ambientales.",
     },
   ];
 
@@ -37,36 +29,26 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {teamMembers.map((member, index) => (
             <Card
               key={index}
-              className="text-center border-border hover:border-primary/50 transition-all hover:shadow-lg"
+              className="border-border hover:border-primary/50 transition-all hover:shadow-lg"
             >
               <CardContent className="pt-8 pb-6">
-                <div className="w-24 h-24 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
-                  <Users className="h-12 w-12 text-primary" />
+                <div className="w-32 h-32 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center">
+                  <Users className="h-16 w-16 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold text-secondary mb-1">
+                <h3 className="text-xl font-bold text-secondary mb-1 text-center">
                   {member.name}
                 </h3>
-                <p className="text-sm text-primary font-medium mb-2">{member.role}</p>
-                <p className="text-sm text-muted-foreground">{member.description}</p>
+                <p className="text-sm text-primary font-semibold mb-1 text-center">{member.role}</p>
+                <p className="text-sm text-accent font-medium mb-4 text-center italic">{member.title}</p>
+                <p className="text-sm text-foreground leading-relaxed text-center">{member.description}</p>
               </CardContent>
             </Card>
           ))}
         </div>
-
-        <Card className="mt-12 bg-muted/50 border-none">
-          <CardContent className="p-8 text-center">
-            <p className="text-foreground leading-relaxed">
-              <span className="font-semibold text-secondary">Nota:</span> Esta sección
-              está preparada para que agregues la información detallada y fotografías
-              de tu equipo directivo. Puedes personalizar cada tarjeta con nombres reales,
-              títulos profesionales, biografías y fotos del equipo.
-            </p>
-          </CardContent>
-        </Card>
       </div>
     </section>
   );
