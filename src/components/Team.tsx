@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Users } from "lucide-react";
+import camilaPhoto from "@/assets/camila-gandulfo.jpg";
 
 const Team = () => {
   const teamMembers = [
@@ -8,6 +9,7 @@ const Team = () => {
       role: "Ingeniera Ambiental",
       title: "Directora Ejecutiva y Líder en Conservación Terrestre",
       description: "Co-fundadora. Ingeniera ambiental con experiencia en conservación de la biodiversidad, planificación territorial y análisis espacial. Especializada en SIG, áreas prioritarias de conservación y diseño de estrategias ecológicas en ecosistemas terrestres y humedales.",
+      photo: camilaPhoto,
     },
     {
       name: "Sebastián Sepúlveda",
@@ -36,9 +38,19 @@ const Team = () => {
               className="border-border hover:border-primary/50 transition-all hover:shadow-lg"
             >
               <CardContent className="pt-8 pb-6">
-                <div className="w-32 h-32 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center">
-                  <Users className="h-16 w-16 text-primary" />
-                </div>
+                {member.photo ? (
+                  <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden">
+                    <img 
+                      src={member.photo} 
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ) : (
+                  <div className="w-32 h-32 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center">
+                    <Users className="h-16 w-16 text-primary" />
+                  </div>
+                )}
                 <h3 className="text-xl font-bold text-secondary mb-1 text-center">
                   {member.name}
                 </h3>
