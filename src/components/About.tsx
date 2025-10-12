@@ -53,7 +53,7 @@ const About = () => {
                     Nuestra Misión
                   </h3>
                   <p className="text-foreground leading-relaxed">
-                    Impulsar la conservación de ecosistemas mediante tecnología avanzada, conocimiento científico y compromiso territorial, ofreciendo soluciones técnicas de alta calidad que promuevan la planificación estratégica y la gestión sostenible de la biodiversidad.
+                    Brindamos soluciones ambientales integradas para la conservación de ecosistemas terrestres y acuáticos, combinando tecnología geoespacial, monitoreo ambiental y planificación ecológica. Actuamos desde los territorios del sur de Chile, con un enfoque interdisciplinario, riguroso y territorial, generando información clave para la toma de decisiones ambientales, la gestión sostenible y la protección de la biodiversidad.
                   </p>
                 </div>
               </div>
@@ -71,7 +71,7 @@ const About = () => {
                     Nuestra Visión
                   </h3>
                   <p className="text-foreground leading-relaxed">
-                    Liderar proyectos de alta complejidad técnica y científica en conservación, expandiendo nuestro impacto en Chile y Latinoamérica a través de la investigación aplicada, la innovación tecnológica y el desarrollo continuo de nuestras capacidades profesionales.
+                    Convertirnos en una empresa ambiental de referencia nacional e internacional, capaz de liderar proyectos de alta complejidad técnica y científica en conservación, modelación ecológica y planificación territorial. Aspiramos a integrar el conocimiento local con la ciencia aplicada, desarrollando innovación ambiental desde el sur de Chile para el mundo, y promoviendo una nueva forma de habitar y comprender los ecosistemas.
                   </p>
                 </div>
               </div>

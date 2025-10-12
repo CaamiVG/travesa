@@ -18,14 +18,8 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-secondary backdrop-blur-sm border-b border-secondary/30 shadow-lg">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <div className="flex items-center space-x-3">
-            <img src={logo} alt="Travesa Logo" className="h-12 w-12 object-contain" />
-            <div className="flex flex-col">
-              <span className="font-heading font-bold text-lg text-secondary-foreground leading-tight">
-                Travesa
-              </span>
-              <span className="text-xs text-secondary-foreground/80">Consultora Ambiental</span>
-            </div>
+          <div className="flex items-center">
+            <img src={logo} alt="Travesa - Consultora Ambiental" className="h-16 w-auto object-contain" />
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">
