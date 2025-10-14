@@ -9,53 +9,53 @@ const Services = () => {
   const services = [
     {
       icon: Map,
-      title: "Servicios Técnicos",
+      title: "Cartografía Ambiental, Análisis y Gestión Territorial",
       description:
-        "Cartografía ambiental, análisis territorial y gestión forestal con tecnología de punta y profesionales acreditados.",
+        "Desarrollamos productos cartográficos y diagnósticos ambientales de alta precisión, orientados a la planificación ecológica y la gestión sustentable del territorio.",
       features: [
-        "Cartografía ambiental y georreferenciación predial",
-        "Diagnóstico de paisajes degradados y fragmentación ecológica",
-        "Planes de manejo (bosque nativo, conservación, restauración)",
-        "Detección de corta ilegal o uso no autorizado con drones",
-        "Inventario y tasación de predios forestales",
+        "Elaboración de cartografía ambiental y georreferenciación predial",
+        "Diagnóstico de paisajes degradados y análisis de fragmentación ecológica",
+        "Diseño e implementación de planes de manejo de bosque nativo, conservación y restauración",
+        "Detección de cortas ilegales y usos no autorizados mediante drones y teledetección",
+        "Inventario, evaluación y tasación de predios forestales",
       ],
       image: gisImage,
     },
     {
       icon: Activity,
-      title: "Servicios de Monitoreo y Análisis",
+      title: "Monitoreo y Análisis Ambiental",
       description:
-        "Monitoreo ambiental avanzado con drones, sensores y análisis de parámetros fisicoquímicos en ecosistemas terrestres y acuáticos.",
+        "Realizamos campañas de monitoreo ambiental terrestre y acuático, aplicando metodologías estandarizadas y equipamiento tecnológico para la recolección y análisis de datos ambientales.",
       features: [
         "Monitoreo ambiental con drones y sensores",
-        "Instalación y análisis de estaciones meteorológicas",
-        "Análisis de parámetros fisicoquímicos en cuerpos de agua y fiordos",
-        "Evaluación de servicios ecosistémicos y modelación espacial",
+        "Instalación, operación y análisis de datos de estaciones meteorológicas",
+        "Medición y análisis de parámetros fisicoquímicos en cuerpos de agua continentales como fiordos, lagos, ríos, etc.",
+        "Evaluación de servicios ecosistémicos, calidad ambiental y modelación espacial de variables ecológicas",
       ],
       image: monitoringImage,
     },
     {
       icon: FileSearch,
-      title: "Servicios de Planificación",
+      title: "Planificación y Evaluación Ambiental",
       description:
-        "Planificación estratégica y diseño de paisajes funcionales basados en estándares internacionales y análisis territorial.",
+        "Diseñamos estrategias y herramientas de planificación ecológica con base científica, orientadas a la conservación y gestión integral del territorio.",
       features: [
         "Identificación de áreas prioritarias de conservación",
         "Diseño de paisajes funcionales y corredores ecológicos",
-        "Simulaciones y modelaciones espaciales",
-        "Estudios de línea base ambiental",
+        "Simulaciones y modelaciones ecológicas, hidrológicas y espaciales",
+        "Estudios de línea base ambiental, caracterización ecosistémica y evaluación de impactos",
       ],
       image: studiesImage,
     },
     {
       icon: TreePine,
-      title: "Servicios de Capacitación y Apoyo Institucional",
+      title: "Capacitación y Apoyo Institucional",
       description:
-        "Fortalecimiento de capacidades locales mediante educación ambiental y asistencia técnica especializada.",
+        "Fortalecemos capacidades locales y técnicas mediante programas de formación, asesorías y acompañamiento especializado a instituciones, comunidades y empresas.",
       features: [
         "Talleres de educación ambiental y SIG aplicado",
-        "Capacitación en herramientas de conservación y análisis territorial",
-        "Apoyo técnico a municipios, ONGs o empresas en gestión ambiental",
+        "Capacitación en herramientas de conservación, monitoreo y análisis territorial",
+        "Asesorías técnicas a municipios, ONGs y empresas en gestión y planificación ambiental",
       ],
       image: restorationImage,
     },

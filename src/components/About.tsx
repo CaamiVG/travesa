@@ -19,7 +19,7 @@ const About = () => {
                 Nos inspiran los paisajes que habitamos —bosques, humedales, fiordos y montañas— y buscamos integrarlos en soluciones concretas para enfrentar los desafíos ambientales actuales y futuros.
               </p>
               <p className="text-foreground leading-relaxed mb-4">
-                A través de un enfoque interdisciplinario y territorial, ofrecemos servicios que combinan conocimiento técnico con herramientas como los sistemas de información geográfica (SIG), el monitoreo con drones, el análisis de servicios ecosistémicos y la evaluación espacial de paisajes degradados.
+                Especializados en conservación de la biodiversidad, planificación territorial y monitoreo ambiental. Nuestro equipo multidisciplinario aplica herramientas SIG, análisis espacial y metodologías de campo y laboratorio para el estudio y gestión de ecosistemas terrestres, acuáticos y marinos.
               </p>
               <p className="text-foreground leading-relaxed mb-4">
                 Nuestra visión es avanzar progresivamente hacia la integración de modelos predictivos, modelación ecológica y climática, y simulaciones espacio-temporales que permitan tomar decisiones más informadas y estratégicas en conservación.
@@ -52,8 +52,11 @@ const About = () => {
                   <h3 className="text-xl font-semibold text-secondary mb-3">
                     Nuestra Misión
                   </h3>
+                  <p className="text-foreground leading-relaxed mb-3">
+                    Brindamos soluciones ambientales integrales orientadas a la conservación y gestión sostenible de los ecosistemas terrestres, acuáticos y marinos. Combinamos tecnología geoespacial, monitoreo ambiental y planificación ecológica bajo un enfoque interdisciplinario que integra la ciencia aplicada, el conocimiento local y la gestión territorial.
+                  </p>
                   <p className="text-foreground leading-relaxed">
-                    Brindamos soluciones ambientales integradas para la conservación de ecosistemas terrestres y acuáticos, combinando tecnología geoespacial, monitoreo ambiental y planificación ecológica. Actuamos desde los territorios del sur de Chile, con un enfoque interdisciplinario, riguroso y territorial, generando información clave para la toma de decisiones ambientales, la gestión sostenible y la protección de la biodiversidad.
+                    Actuamos desde los paisajes del sur de Chile, generando información ambiental de alto valor técnico para fortalecer la toma de decisiones, proteger la biodiversidad y promover un equilibrio entre desarrollo y naturaleza.
                   </p>
                 </div>
               </div>
@@ -70,8 +73,11 @@ const About = () => {
                   <h3 className="text-xl font-semibold text-secondary mb-3">
                     Nuestra Visión
                   </h3>
+                  <p className="text-foreground leading-relaxed mb-3">
+                    Ser una consultora ambiental de excelencia, reconocida a nivel nacional e internacional por liderar proyectos de alta complejidad técnica y científica en conservación, modelación ecológica y planificación territorial.
+                  </p>
                   <p className="text-foreground leading-relaxed">
-                    Convertirnos en una empresa ambiental de referencia nacional e internacional, capaz de liderar proyectos de alta complejidad técnica y científica en conservación, modelación ecológica y planificación territorial. Aspiramos a integrar el conocimiento local con la ciencia aplicada, desarrollando innovación ambiental desde el sur de Chile para el mundo, y promoviendo una nueva forma de habitar y comprender los ecosistemas.
+                    Aspiramos a consolidar desde el sur de Chile un modelo de innovación ambiental que una la tecnología con el conocimiento del territorio, impulsando una nueva forma de comprender, restaurar y habitar los ecosistemas, en armonía con las comunidades y la naturaleza.
                   </p>
                 </div>
               </div>
@@ -92,23 +98,23 @@ const About = () => {
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
-                    <span>Impulsar la conservación de ecosistemas terrestres y marinos mediante planificación estratégica y diagnósticos territoriales con base científica</span>
+                    <span>Impulsar la conservación y restauración de ecosistemas terrestres y acuáticos, mediante planificación ecológica, diagnósticos territoriales y estudios ambientales con base científica.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
-                    <span>Desarrollar e implementar herramientas tecnológicas (SIG, teledetección, drones, estaciones meteorológicas) para el monitoreo ambiental y la gestión sostenible</span>
+                    <span>Desarrollar e implementar herramientas tecnológicas avanzadas —como sistemas de información geográfica (SIG), teledetección, drones y estaciones meteorológicas— para fortalecer el monitoreo ambiental y la gestión sostenible de los recursos naturales.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
-                    <span>Identificar áreas prioritarias para la conservación utilizando estándares internacionales y enfoques participativos vinculados a los territorios</span>
+                    <span>Identificar áreas prioritarias para la conservación aplicando estándares internacionales, análisis espaciales y metodologías participativas que integren el conocimiento local y la realidad de los territorios.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
-                    <span>Promover la investigación aplicada y la innovación ambiental, incluyendo modelación espacial, ecológica e hidrológica a distintas escalas</span>
+                    <span>Promover la investigación aplicada y la innovación ambiental, incorporando modelación ambiental, hidrológicas y espaciales que aporten al diseño de estrategias de manejo y adaptación frente al cambio climático.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
-                    <span>Fortalecer capacidades locales y redes de colaboración a través de la educación ambiental, asesorías técnicas y alianzas con comunidades, instituciones y centros de investigación</span>
+                    <span>Fortalecer capacidades locales y redes de colaboración, a través de programas de educación ambiental, asesorías técnicas y alianzas con comunidades, instituciones públicas, privadas y centros de investigación.</span>
                   </li>
                 </ul>
               </div>
