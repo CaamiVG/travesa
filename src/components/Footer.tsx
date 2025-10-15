@@ -64,10 +64,10 @@ const Footer = () => {
               <li>Castro, Chile</li>
               <li>
                 <a
-                  href="mailto:contacto@travesa.cl"
+                  href="mailto:travesaconsultora@gmail.com"
                   className="hover:text-primary-foreground transition-colors"
                 >
-                  contacto@travesa.cl
+                  travesaconsultora@gmail.com
                 </a>
               </li>
               <li>

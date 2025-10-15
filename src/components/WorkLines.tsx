@@ -36,7 +36,8 @@ const WorkLines = () => {
       items: [
         "Elaboración de planes de manejo de conservación y uso sostenible.",
         "Asesoría técnica en manejo forestal (con profesionales acreditados).",
-        "Diagnósticos prediales, caracterización ecológica y cartografía georreferenciada."
+        "Diagnósticos prediales, caracterización ecológica y cartografía georreferenciada.",
+        "Estrategias de restauración post-incendio y manejo del fuego, considerando la regeneración natural, resiliencia del suelo y recolonización vegetal."
       ]
     },
     {

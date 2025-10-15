@@ -7,14 +7,14 @@ const Team = () => {
     {
       name: "Camila Gandulfo",
       role: "Ingeniera Ambiental",
-      title: "Directora Ejecutiva y Líder en Conservación Terrestre",
+      title: "Líder en Conservación Terrestre",
       description: "Co-fundadora. Ingeniera ambiental con experiencia en conservación de la biodiversidad, planificación territorial y análisis espacial. Especializada en SIG, áreas prioritarias de conservación y diseño de estrategias ecológicas en ecosistemas terrestres y humedales.",
       photo: camilaPhoto,
     },
     {
       name: "Sebastián Sepúlveda",
       role: "Ingeniero Ambiental",
-      title: "Director Técnico y Líder en Sistemas Acuáticos y Datos Ambientales",
+      title: "Líder en Sistemas Acuáticos y Datos Ambientales",
       description: "Co-fundador. Especialista en monitoreo de ecosistemas acuáticos y análisis de parámetros fisicoquímicos en cuerpos de agua. Su trabajo se orienta en la recolección, procesamiento y modelación de datos ambientales, integrando ciencia aplicada y gestión territorial.",
     },
   ];
