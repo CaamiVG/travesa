@@ -19,7 +19,7 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
-            <img src={logo} alt="Travesa - Consultora Ambiental" className="h-16 w-16 object-cover rounded-full" />
+            <img src={logo} alt="Travesa - Consultora Ambiental" className="h-16 w-auto object-contain" />
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">
