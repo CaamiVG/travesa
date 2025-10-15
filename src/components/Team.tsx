@@ -15,7 +15,7 @@ const Team = () => {
       name: "Sebastián Sepúlveda",
       role: "Ingeniero Ambiental",
       title: "Director Técnico y Líder en Sistemas Acuáticos y Datos Ambientales",
-      description: "Co-fundador. Especialista en monitoreo de ecosistemas marinos, instalación de estaciones meteorológicas y análisis de parámetros fisicoquímicos en cuerpos de agua y fiordos. Enfocado en el desarrollo de herramientas para la recolección y modelación de datos ambientales.",
+      description: "Co-fundador. Especialista en monitoreo de ecosistemas acuáticos y análisis de parámetros fisicoquímicos en cuerpos de agua. Su trabajo se orienta en la recolección, procesamiento y modelación de datos ambientales, integrando ciencia aplicada y gestión territorial.",
     },
   ];
 

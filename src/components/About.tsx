@@ -19,7 +19,7 @@ const About = () => {
                 Nos inspiran los paisajes que habitamos —bosques, humedales, fiordos y montañas— y buscamos integrarlos en soluciones concretas para enfrentar los desafíos ambientales actuales y futuros.
               </p>
               <p className="text-foreground leading-relaxed mb-4">
-                Especializados en conservación de la biodiversidad, planificación territorial y monitoreo ambiental. Nuestro equipo multidisciplinario aplica herramientas SIG, análisis espacial y metodologías de campo y laboratorio para el estudio y gestión de ecosistemas terrestres, acuáticos y marinos.
+                Especializados en conservación de la biodiversidad, planificación territorial y monitoreo ambiental. Nuestro equipo multidisciplinario aplica herramientas SIG, análisis espacial y metodologías de campo y laboratorio para el estudio y gestión de ecosistemas terrestres y acuáticos
               </p>
               <p className="text-foreground leading-relaxed mb-4">
                 Nuestra visión es avanzar progresivamente hacia la integración de modelos predictivos, modelación ecológica y climática, y simulaciones espacio-temporales que permitan tomar decisiones más informadas y estratégicas en conservación.
@@ -53,7 +53,7 @@ const About = () => {
                     Nuestra Misión
                   </h3>
                   <p className="text-foreground leading-relaxed mb-3">
-                    Brindamos soluciones ambientales integrales orientadas a la conservación y gestión sostenible de los ecosistemas terrestres, acuáticos y marinos. Combinamos tecnología geoespacial, monitoreo ambiental y planificación ecológica bajo un enfoque interdisciplinario que integra la ciencia aplicada, el conocimiento local y la gestión territorial.
+                    Brindamos soluciones ambientales integrales orientadas a la conservación y gestión sostenible de los ecosistemas terrestres y acuáticos. Combinamos tecnología geoespacial, monitoreo ambiental y planificación ecológica bajo un enfoque interdisciplinario que integra la ciencia aplicada, el conocimiento local y la gestión territorial.
                   </p>
                   <p className="text-foreground leading-relaxed">
                     Actuamos desde los paisajes del sur de Chile, generando información ambiental de alto valor técnico para fortalecer la toma de decisiones, proteger la biodiversidad y promover un equilibrio entre desarrollo y naturaleza.

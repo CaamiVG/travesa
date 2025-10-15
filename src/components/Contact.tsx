@@ -60,7 +60,7 @@ const Contact = () => {
             Conecta con Nosotros
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            ¿Tienes un proyecto en mente? Contáctanos y trabajemos juntos por un futuro sostenible
+            Impulsa tu proyecto con nuestro equipo experto en monitoreo, planificación y gestión de ecosistemas
           </p>
         </div>
 
@@ -108,7 +108,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground mb-1">Ubicación</p>
-                      <p className="text-foreground">Santiago, Chile</p>
+                      <p className="text-foreground">Castro, Chile</p>
                     </div>
                   </div>
                 </div>
@@ -120,10 +120,10 @@ const Contact = () => {
                 <h3 className="text-xl font-semibold mb-4">Horario de Atención</h3>
                 <div className="space-y-2">
                   <p className="text-secondary-foreground/90">
-                    Lunes a Viernes: 9:00 - 18:00
+                    Lunes a Viernes: 9:00 - 17:30
                   </p>
                   <p className="text-secondary-foreground/90">
-                    Sábado: 9:00 - 13:00
+                    Sábado: Cerrado
                   </p>
                   <p className="text-secondary-foreground/90">Domingo: Cerrado</p>
                 </div>

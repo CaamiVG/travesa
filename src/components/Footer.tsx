@@ -61,7 +61,7 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Contacto</h3>
             <ul className="space-y-2 text-sm text-secondary-foreground/80">
-              <li>Santiago, Chile</li>
+              <li>Castro, Chile</li>
               <li>
                 <a
                   href="mailto:contacto@travesa.cl"

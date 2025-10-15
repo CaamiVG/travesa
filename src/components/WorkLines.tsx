@@ -8,7 +8,7 @@ const WorkLines = () => {
       icon: Leaf,
       items: [
         "Identificación de áreas de alto valor ecológico",
-        "Análisis de amenazas, gobernanza y diseño de estrategias de conservación",
+        "Análisis de amenazas, gobernanza y diseño de estrategias de manejo.",
         "Aplicación de los Estándares Abiertos para la Práctica de la Conservación"
       ]
     },
@@ -16,9 +16,9 @@ const WorkLines = () => {
       title: "Dinámica del Paisaje y Conservación Ecológica",
       icon: Map,
       items: [
-        "Evaluación de paisajes degradados, fragmentación, conectividad",
-        "Análisis espacial de cambios de uso del suelo",
-        "Diseño de corredores ecológicos y paisajes funcionales"
+        "Evaluación de paisajes degradados y análisis de fragmentación ecológica.",
+        "Análisis espacial de cambios de uso del suelo y pérdida de cobertura vegetal.",
+        "Diseño de corredores biológicos"
       ]
     },
     {
@@ -26,26 +26,26 @@ const WorkLines = () => {
       icon: Droplet,
       items: [
         "Evaluación de servicios ecosistémicos (agua, carbono, biodiversidad)",
-        "Modelación hidrológica y análisis de resiliencia ante el cambio climático",
-        "Monitoreo de procesos ecológicos mediante SIG y sensores remotos"
+        "Modelación hidrológica y análisis de resiliencia ecológica",
+        "Monitoreo de procesos ecosistémicos mediante tecnología geoespacial."
       ]
     },
     {
       title: "Planificación y Manejo Ambiental",
       icon: FileText,
       items: [
-        "Desarrollo de planes de manejo de conservación y uso sustentable",
-        "Asesoría para planes de manejo forestal (con profesionales acreditados)",
-        "Diagnósticos prediales y cartografía georreferenciada"
+        "Elaboración de planes de manejo de conservación y uso sostenible.",
+        "Asesoría técnica en manejo forestal (con profesionales acreditados).",
+        "Diagnósticos prediales, caracterización ecológica y cartografía georreferenciada."
       ]
     },
     {
       title: "Tecnología Aplicada a la Conservación",
       icon: Cpu,
       items: [
-        "Uso de drones para monitoreo territorial y diagnóstico",
-        "Procesamiento de datos meteorológicos y oceanográficos",
-        "Generación de modelos predictivos y simulaciones ambientales"
+        "Uso de drones para monitoreo territorial y diagnóstico ecológico.",
+        "Procesamiento y análisis de datos ambientales",
+        "Desarrollo de modelos predictivos y simulaciones ambientales."
       ]
     }
   ];
@@ -58,7 +58,7 @@ const WorkLines = () => {
             Nuestras Líneas de Trabajo
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Áreas de especialización que abordan los desafíos ambientales con enfoque territorial y tecnológico
+            Nuestras líneas de trabajo combinan análisis espacial, monitoreo ambiental y planificación ecológica para generar conocimiento aplicable a la conservación y el uso sostenible de los ecosistemas del sur de Chile
           </p>
         </div>
 

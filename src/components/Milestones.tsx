@@ -5,23 +5,13 @@ const Milestones = () => {
   const stats = [
     {
       icon: Award,
-      number: "50+",
+      number: "5+",
       label: "Proyectos Completados",
     },
     {
-      icon: Users,
-      number: "30+",
-      label: "Clientes Satisfechos",
-    },
-    {
       icon: TrendingUp,
-      number: "15+",
+      number: "3+",
       label: "Años de Experiencia",
-    },
-    {
-      icon: Leaf,
-      number: "100+",
-      label: "Hectáreas Restauradas",
     },
   ];
 
@@ -60,7 +50,7 @@ const Milestones = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid sm:grid-cols-2 gap-6 mb-16">
           {stats.map((stat, index) => (
             <Card
               key={index}
