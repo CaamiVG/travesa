@@ -5,36 +5,56 @@ const Milestones = () => {
   const stats = [
     {
       icon: Award,
-      number: "5+",
-      label: "Proyectos Completados",
+      number: "10+",
+      label: "Proyectos técnicos ejecutados por su equipo profesional",
     },
     {
       icon: TrendingUp,
       number: "3+",
-      label: "Años de Experiencia",
+      label: "Años de experiencia en conservación, cartografía y monitoreo ambiental",
+    },
+    {
+      icon: Award,
+      number: "6+",
+      label: "Capacitaciones y certificaciones ambientales especializadas",
+    },
+    {
+      icon: Users,
+      number: "2",
+      label: "Profesionales fundadores con experiencia en gestión ambiental y SIG",
     },
   ];
 
   const milestones = [
     {
+      year: "2025",
+      title: "Fundación de TRAVESA Consultora Ambiental",
+      description: "Creación de la consultora en Castro, Chiloé, orientada a soluciones territoriales basadas en ciencia y conservación ecológica.",
+    },
+    {
       year: "2024",
-      title: "Expansión de Servicios",
-      description: "Implementación de nuevas tecnologías SIG y drones para monitoreo ambiental",
+      title: "Restauración y manejo forestal — CONAF / IFOP",
+      description: "Participación en proyectos de recuperación post incendios y monitoreo ambiental costero, aplicando SIG, drones y análisis de datos oceanográficos.",
     },
     {
       year: "2023",
-      title: "Certificación ISO 9001",
-      description: "Obtención de certificación de calidad en gestión ambiental",
+      title: "Estudio de Protección Ambiental de Humedales Urbanos (Municipalidad de Concepción)",
+      description: "Elaboración de diagnósticos ecológicos y cartografía ambiental bajo los Estándares Abiertos para la Conservación.",
     },
     {
       year: "2022",
-      title: "Proyecto Regional Destacado",
-      description: "Liderazgo en restauración ecológica de cuenca hidrográfica regional",
+      title: "Propuesta de Manejo para el Bosque Templado Lluvioso del Valle de Cochamó",
+      description: "Investigación de Camila Gandulfo que integra conservación, cartografía SIG y planificación ecológica.",
     },
     {
       year: "2021",
-      title: "Alianzas Comunitarias",
-      description: "Establecimiento de red de trabajo con comunidades indígenas locales",
+      title: "Investigaciones en Cambio Ambiental Global (ECCALab / SECOS)",
+      description: "Proyectos de Sebastián Sepúlveda sobre análisis de varazones, monitoreo marino y aplicación de datos satelitales.",
+    },
+    {
+      year: "2019",
+      title: "Movilización Internacional – Universidad Nacional del Litoral (Argentina)",
+      description: "Experiencia de Sebastián en restauración ecológica y control de especies invasoras.",
     },
   ];
 
@@ -46,11 +66,11 @@ const Milestones = () => {
             Nuestros Hitos
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Logros que demuestran nuestro compromiso con la excelencia ambiental
+            Logros que reflejan la trayectoria y experiencia técnica de nuestro equipo fundador.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-6 mb-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {stats.map((stat, index) => (
             <Card
               key={index}
