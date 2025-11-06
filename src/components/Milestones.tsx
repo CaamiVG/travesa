@@ -1,5 +1,6 @@
-import { Award, TrendingUp, Users, Leaf } from "lucide-react";
+import { Award, TrendingUp, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import teamWorkCollage from "@/assets/team-work-collage.jpg";
 
 const Milestones = () => {
   const stats = [
@@ -39,7 +40,7 @@ const Milestones = () => {
     {
       year: "2023",
       title: "Estudio de Protección Ambiental de Humedales Urbanos (Municipalidad de Concepción)",
-      description: "Elaboración de diagnósticos ecológicos y cartografía ambiental bajo los Estándares Abiertos para la Conservación.",
+      description: "Elaboración de diagnósticos ecológicos y cartografía ambiental bajo la metodología internacional de los Estándares Abiertos para la Conservación.",
     },
     {
       year: "2022",
@@ -49,7 +50,7 @@ const Milestones = () => {
     {
       year: "2021",
       title: "Investigaciones en Cambio Ambiental Global (ECCALab / SECOS)",
-      description: "Proyectos de Sebastián Sepúlveda sobre análisis de varazones, monitoreo marino y aplicación de datos satelitales.",
+      description: "Proyecto de Sebastián Sepúlveda sobre análisis de varazones, monitoreo marino y aplicación de datos satelitales.",
     },
     {
       year: "2019",
@@ -110,13 +111,13 @@ const Milestones = () => {
           </div>
         </div>
 
-        <Card className="mt-12 bg-muted/50 border-none">
-          <CardContent className="p-8 text-center">
-            <p className="text-foreground leading-relaxed">
-              <span className="font-semibold text-secondary">Personaliza esta sección:</span>{" "}
-              Agrega tus propios hitos, proyectos destacados y logros específicos de Travesa.
-              Esta es una plantilla que puedes actualizar con tu información real.
-            </p>
+        <Card className="mt-12 bg-muted/50 border-none overflow-hidden">
+          <CardContent className="p-0">
+            <img 
+              src={teamWorkCollage} 
+              alt="Equipo Travesa trabajando en proyectos ambientales" 
+              className="w-full h-auto object-cover max-h-[400px]"
+            />
           </CardContent>
         </Card>
       </div>
