@@ -14,34 +14,7 @@ const Contact = () => {
     phone: "",
     message: "",
   });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Form validation
-    if (!formData.name || !formData.email || !formData.message) {
-      toast({
-        title: "Error",
-        description: "Por favor completa todos los campos obligatorios",
-        variant: "destructive",
-      });
-      return;
-    }
-
-    // Here you would typically send the form data to your backend
-    toast({
-      title: "Mensaje enviado",
-      description: "Nos pondremos en contacto contigo pronto.",
-    });
-
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
-    });
-  };
+  const [isSending, setIsSending] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -52,19 +25,85 @@ const Contact = () => {
     });
   };
 
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    // validación simple
+    if (!formData.name || !formData.email || !formData.message) {
+      toast({
+        title: "Faltan datos",
+        description: "Por favor completa nombre, correo y mensaje.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    try {
+      setIsSending(true);
+
+      // armamos los datos tal como los espera Formspree
+      const data = new FormData();
+      data.append("nombre", formData.name);
+      data.append("email", formData.email);
+      data.append("telefono", formData.phone);
+      data.append("mensaje", formData.message);
+
+      const res = await fetch("https://formspree.io/f/xpwkzogb", {
+        method: "POST",
+        body: data,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (res.ok) {
+        toast({
+          title: "Mensaje enviado ✅",
+          description: "Gracias por escribirnos. Te responderemos a la brevedad.",
+        });
+        // limpiar formulario
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      } else {
+        toast({
+          title: "Hubo un problema",
+          description: "Inténtalo de nuevo o escríbenos a contacto@travesa.cl",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Error de conexión",
+        description: "No pudimos enviar el mensaje. Intenta más tarde.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSending(false);
+    }
+  };
+
   return (
-    <section id="contacto" className="py-20 bg-gradient-to-b from-background to-muted/20">
+    <section
+      id="contacto"
+      className="py-20 bg-gradient-to-b from-background to-muted/20"
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-secondary mb-4">
             Conecta con Nosotros
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Impulsa tu proyecto con nuestro equipo experto en monitoreo, planificación y gestión de ecosistemas
+            Impulsa tu proyecto con nuestro equipo experto en monitoreo,
+            planificación y gestión de ecosistemas
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          {/* columna izquierda */}
           <div>
             <Card className="mb-8">
               <CardContent className="p-8">
@@ -77,12 +116,14 @@ const Contact = () => {
                       <Mail className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground mb-1">Email</p>
+                      <p className="text-sm text-muted-foreground mb-1">
+                        Email
+                      </p>
                       <a
-                        href="mailto:travesaconsultora@gmail.com"
+                        href="mailto:contacto@travesa.cl"
                         className="text-foreground hover:text-primary transition-colors"
                       >
-                        travesaconsultora@gmail.com
+                        contacto@travesa.cl
                       </a>
                     </div>
                   </div>
@@ -92,7 +133,9 @@ const Contact = () => {
                       <Phone className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground mb-1">Teléfono</p>
+                      <p className="text-sm text-muted-foreground mb-1">
+                        Teléfono
+                      </p>
                       <a
                         href="tel:+56912345678"
                         className="text-foreground hover:text-primary transition-colors"
@@ -107,7 +150,9 @@ const Contact = () => {
                       <MapPin className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground mb-1">Ubicación</p>
+                      <p className="text-sm text-muted-foreground mb-1">
+                        Ubicación
+                      </p>
                       <p className="text-foreground">Castro, Chile</p>
                     </div>
                   </div>
@@ -117,20 +162,23 @@ const Contact = () => {
 
             <Card className="bg-secondary text-secondary-foreground">
               <CardContent className="p-8">
-                <h3 className="text-xl font-semibold mb-4">Horario de Atención</h3>
+                <h3 className="text-xl font-semibold mb-4">
+                  Horario de Atención
+                </h3>
                 <div className="space-y-2">
                   <p className="text-secondary-foreground/90">
                     Lunes a Viernes: 9:00 - 17:30
                   </p>
+                  <p className="text-secondary-foreground/90">Sábado: Cerrado</p>
                   <p className="text-secondary-foreground/90">
-                    Sábado: Cerrado
+                    Domingo: Cerrado
                   </p>
-                  <p className="text-secondary-foreground/90">Domingo: Cerrado</p>
                 </div>
               </CardContent>
             </Card>
           </div>
 
+          {/* formulario */}
           <Card>
             <CardContent className="p-8">
               <h3 className="text-xl font-semibold text-secondary mb-6">
@@ -138,7 +186,10 @@ const Contact = () => {
               </h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-foreground mb-2"
+                  >
                     Nombre completo *
                   </label>
                   <Input
@@ -154,7 +205,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-foreground mb-2"
+                  >
                     Email *
                   </label>
                   <Input
@@ -170,7 +224,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
+                  <label
+                    htmlFor="phone"
+                    className="block text-sm font-medium text-foreground mb-2"
+                  >
                     Teléfono
                   </label>
                   <Input
@@ -185,7 +242,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-foreground mb-2"
+                  >
                     Mensaje *
                   </label>
                   <Textarea
@@ -203,9 +263,10 @@ const Contact = () => {
                   type="submit"
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                   size="lg"
+                  disabled={isSending}
                 >
                   <Send className="mr-2 h-5 w-5" />
-                  Enviar Mensaje
+                  {isSending ? "Enviando..." : "Enviar Mensaje"}
                 </Button>
               </form>
             </CardContent>
